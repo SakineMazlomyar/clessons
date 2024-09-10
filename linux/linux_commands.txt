@@ -1,0 +1,14 @@
+ls -lt            ==> l is for formatting and t is for sorting the list according to the time it was modified.
+ls -lt --reverse  ==> is for for formatting in the reverse format.
+file filename     ==> this prints a brief description of the files' content.
+less              ==> this is a command to view a text file
+ASCII = AS-KEY    ==> is short for american stadard code for information interchange encoding schema
+Symbolic link     ==> it points to another file and then that file points to hard drive. When the target link is removed then the link is broken. It workn on file system.
+lrwxrwxrwx 1 root root 11 2007-08-11 07:34 libc.so.6 -> libc-2.6.so it has l
+
+Hard links        ==> there is not difference between regular file and hard link path, it poinst directly to hard drive, if the last link is removed then it is disapeard from disk
+adduser           ==> it adds a user.
+addgroup          ==> it adds a group
+adduser mikael group a  ==> add mikael to a group
+man              ==> this is a comman for getting into manual from the terminal
+ 

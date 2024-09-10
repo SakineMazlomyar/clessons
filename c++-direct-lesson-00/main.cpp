@@ -6,15 +6,9 @@
 4) linking, extrenal or object library 
  */
 
-
-
-/* 
-
-
- */
 using namespace std;
 int main(){
-
-    cout << "Hello World" << endl;
+   
+    cout << "Hello World" << endl << "Sakine" << endl;
     return 0;
 }

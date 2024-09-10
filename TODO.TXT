@@ -1,0 +1,4 @@
+1) do while loop
+2) Skriv ett program som ber användaren att ange två
+tal vars medelvärde programmet sedan räknar ut.
+Programmet skall vara uppdelat i delprogram.

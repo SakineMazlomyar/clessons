@@ -1,14 +1,62 @@
-ls -lt            ==> l is for formatting and t is for sorting the list according to the time it was modified.
-ls -lt --reverse  ==> is for for formatting in the reverse format.
-file filename     ==> this prints a brief description of the files' content.
-less              ==> this is a command to view a text file
-ASCII = AS-KEY    ==> is short for american stadard code for information interchange encoding schema
-Symbolic link     ==> it points to another file and then that file points to hard drive. When the target link is removed then the link is broken. It workn on file system.
-lrwxrwxrwx 1 root root 11 2007-08-11 07:34 libc.so.6 -> libc-2.6.so it has l
+# Commands
 
-Hard links        ==> there is not difference between regular file and hard link path, it poinst directly to hard drive, if the last link is removed then it is disapeard from disk
-adduser           ==> it adds a user.
-addgroup          ==> it adds a group
-adduser mikael group a  ==> add mikael to a group
-man              ==> this is a comman for getting into manual from the terminal
- 
+df                	==> distribution filesystem
+free              	==> amount of free memory
+pwd               	==> print the name of current directory
+cd                	==> change directory
+ls 		  	==> print the content of directory
+ls -lt            	==> l is for formatting and t is for sorting the list according to the time it was modified.
+ls -lt --reverse  	==> is for for formatting in the reverse format.
+ls -l /us	  	==> it will list the content of the directory it is specified for
+
+
+# Path
+1) relative path starts from current working directory
+2) absolut path starts from / root directory
+
+
+# Directory
+. represent working directory
+.. represents working directory's parent
+if we don't specify like relative or absolut path then the working directory will be assumed
+
+# Usefull commands
+
+file filename       	       		 ==> this prints a brief description of the files' content.
+less                	        	==> this is a command to view a text file
+ASCII = AS-KEY      	        	==> is short for american stadard code for information interchange encoding schema
+man		  			==> for getting into manual page
+# Permissions
+-rwx------	                    	==> a leading dash is a file
+drwx---r---	                    	==> a d is a directory
+d-rwx---rw-	                    	==> three first charcters are for users, three next charechters are for group and three last charchters are for others.
+
+# links
+ln -s  source-file  link-name   ==> it creates the soft link 
+lrwxrwxrwx 1 root root 11 2007-08-11 07:34 libc.so.6 -> libc-2.6.so
+1		    	                ==> file number of hard link
+Hard links          	        	==> point to hard drive, if the last link is removed then it is disapeard from disk.
+					Hard link can not be created outside the disk we try to create, hard link may not refernce 					  a directory
+Symbolic link       	        	==> it creates a reference to that file 
+
+# Groups			
+adduser           	           	 ==> it adds a user.
+addgroup                        	 ==> it adds a group
+adduser mikael group a          	 ==> add mikael to a group
+
+# Notes
+Linux has no concept about file extension
+command options starts with a -
+ASCII 			                ==> pronouces as as key shortcut for american standard for information exchange. Teletype to map keyboard charcters to numbers
+
+# commands
+ls -li 					==> listing hard link ids
+
+
+# Redirections
+> filename 				==> creates an empty file
+ls -l > filename.txt			==> write to the file
+ls -l /bin >> filename.txt		==> appends to the last line of the file
+ls -l /ahgoagh/g 2>> filename.txt	==> creates a file with an error message, usually error messages are send to errorstd
+
+2>&1					==> for redirecting standard output and error 

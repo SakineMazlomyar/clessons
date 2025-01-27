@@ -1,3 +1,6 @@
 
 # Ignores all of the out files.
 **/*.out
+.DS_Store
+.vscode
+c++/.DS_Store

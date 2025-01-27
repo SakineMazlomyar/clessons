@@ -22,3 +22,8 @@ Bit-by-bit comparison:
 3rd bit: 0 | 1 = 1
 4th bit: 1 | 1 = 1
 So, 0101 | 0011 results in 0111, which is 7 in decimal.
+
+
+# Notes
+ Compile with higher version: ```g++ -std=c++17 struct.cpp```
+ Flags for warnings ``` g++ -std=c++17 -Wall -Wextra -Werror -pedantic struct.cpp ```
